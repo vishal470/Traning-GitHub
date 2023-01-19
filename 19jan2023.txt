@@ -1,0 +1,41 @@
+Qusetion1: Describe higher order functions.
+
+ANSWER:
+Higher-order functions are functions that take one or more functions as arguments, and/or return a function as their result. These types of functions are commonly used in functional programming, and can be used to achieve a high level of abstraction, making code more reusable and easier to understand.
+Examples of higher-order functions include map, filter, and reduce, which are commonly used to transform and process data in functional programming.
+
+Qustion2: write use cases + any one code example for map, filter and reduce.
+
+ANSWER:
+Map:
+Map is a higher-order function that takes a function and an iterable as arguments, and returns an iterable with the function applied to each element. It is commonly used to transform a list of values into a new list with the same number of elements.
+
+Example:
+
+let num = [1, 2, 3, 4, 5];
+let squares = num.map(x => x * x);
+console.log(squares);
+
+Filter:
+Filter is a higher-order function that takes a function and an iterable as arguments, and returns an iterable containing only the elements for which the function returned True. It is commonly used to select certain elements from a list based on some condition.
+
+Example:
+
+let people = [
+  { name: 'Vishal', age: 25 },
+  { name: 'Harsh', age: 17 },
+  { name: 'Sumit', age: 32 },
+  { name: 'Aman', age: 18 }
+];
+let adults = people.filter(person => person.age >= 18);
+console.log(adults);
+
+
+Reduce:
+Reduce is a higher-order function that takes a function and an iterable as arguments, and applies the function cumulatively to the elements of the iterable, from left to right, so as to reduce the iterable to a single value. It is commonly used to perform some operation on a list of values and reduce it to a single value.
+
+Example:
+
+let numbers = [1, 2, 3, 4, 5];
+let sum = numbers.reduce((acc, curr) => acc + curr);
+console.log(sum); 
